@@ -1,0 +1,157 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623),rgba(0, 0, 0, 0.384)), url(https://cdn.discordapp.com/attachments/441472649848160258/631070471714111499/904558.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header li
+{
+    margin: 10px 0 0 20px;
+}
+.logo
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.right
+{
+    position: absolute;
+    right: 50px;
+}
+/**/
+section
+{
+    padding: 0 40px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.ruw
+{
+    padding-top: 180px;
+    padding-bottom: 20px;
+}
+.imgl
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.imgmoca
+{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.imgmoca img
+{
+    position: absolute; 
+    height: 89%;
+    width: 89%;
+    left: 5.5%;
+    top: 5.5%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.imgmoca div
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute; 
+    animation-name: mocaBorder;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 0;
+}
+.secre
+{
+    margin-top: 15px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    background-color: rgba(165, 165, 165, 0.918);
+    color: black;
+    border-radius: 40px;
+}
+button
+{
+    animation-name: button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+button:hover
+{
+    animation-duration: 2s; 
+}
+/**/
+
+@keyframes mocaBorder
+{
+    0%
+    {
+        border-top:15px solid green;
+        border-bottom:15px solid green; 
+        border-left:15px solid blue;
+        border-right:15px solid blue;
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        border-top:15px solid green;
+        border-bottom:15px solid green; 
+        border-left:15px solid blue;
+        border-right:15px solid blue;
+        transform: rotate(720deg);
+    }
+    100%
+    {
+        border-top:15px solid green;
+        border-bottom:15px solid green; 
+        border-left:15px solid blue;
+        border-right:15px solid blue;
+        transform: rotate(0deg);
+    }
+}
+@keyframes downprefix
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(20px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes button
+{
+    0%
+    {
+        transform: scale(1.1,1.1);
+    }
+    50%
+    {
+        transform: scale(0.9,0.9);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }  
+}
